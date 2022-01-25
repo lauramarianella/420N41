@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Lab: CSS Positioning</title>
+
+    <!-- This is my stylesheet, don't touch it! -->
+    <link href="lab-styles.css" rel="stylesheet" type="text/css" />
+
+    <!-- This is your stylesheet, add your styles in this file -->
+    <link href="my-styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="top">
+    <h1>CSS Positioning</h1>
+
+    <article>
+      <h2>Display</h2>
+
+      <section id="display-01">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+      </section>
+
+      <ul>
+        <li>Get the divs to be on a single line.</li>
+        <li>Surround each div with a thin blue line.</li>
+        <li>Separate each div by 20 pixels.</li>
+      </ul>
+
+      <figure>
+        <img src="images/display-01.png" alt="Result of display-01"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="display-02">
+        <span>one</span>
+        <span>two</span>
+        <span>three</span>
+      </section>
+
+      <ul>
+        <li>Get the spans to be on separate lines.</li>
+        <li>Surround each span with a thin red line.</li>
+        <li>Each span should be as wide as the container.</li>
+      </ul>
+
+      <figure>
+        <img src="images/display-02.png" alt="Result of display-02"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="display-03">
+        <div>one</div>
+        <div>two</div>
+        <div>three</div>
+      </section>
+
+      <ul>
+        <li>Get the divs to be on a single line.</li>
+        <li>Surround each div with a thin green line.</li>
+        <li>Make each div be a square.</li>
+      </ul>
+
+      <figure>
+        <img src="images/display-03.png" alt="Result of display-03"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="display-04">
+        <div>I should be hidden.</div>
+        <div>I should be showing.</div>
+      </section>
+      
+      <ul>
+        <li>Don't display the first div.</li>
+        <li>But display the second. (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-of-type" target="_blank">hint</a>)</li>
+      </ul>
+
+      <figure>
+        <img src="images/display-04.png" alt="Result of display-04"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="display-05">
+        <a href="#">click me</a>
+      </section>
+
+      <ul>
+        <li>Make this link be half as wide as the container.</li>
+        <li>Add a background to make it look like a rectangular button.</li>
+        <li>Add some padding to make it taller.</li>
+        <li>Then center the rectangle in the middle of the container using fluid margins.</li>
+      </ul>
+
+      <figure>
+        <img src="images/display-05.png" alt="Result of display-05"/>
+        <figcaption>Result</figcaption>
+      </figure>
+    </article>
+
+    <article>
+      <h2>Box Model</h2>
+
+      <section id="boxmodel-01">
+        <div>Default Content Box Model</div>
+      </section>
+
+      <ul>
+        <li>Make this div be half as wide as the container and centered with margins.</li>
+        <li>Then add a lot of padding and a thick border.</li>
+        <li>Notice how the content is half the width of the container, but the padding and border have added on to it and the whole thing is more than half of the container's width.</li>
+      </ul>
+
+      <figure>
+        <img src="images/boxmodel-01.png" alt="Result of boxmodel-01"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="boxmodel-02">
+        <div>Border Box Model</div>
+      </section>
+
+      <ul>
+        <li>Add the same declarations for width, padding, border, and margin to this block.</li>
+        <li>Without altering those declarations, add a new declaration to change the box model. (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing" target="_blank">hint</a>)</li>
+        <li>Your entire box, including border and padding, should now be half the container's width.</li>
+      </ul>
+
+      <figure>
+        <img src="images/boxmodel-02.png" alt="Result of boxmodel-02"/>
+        <figcaption>Result</figcaption>
+      </figure>
+    </article>
+
+    <article>
+      <h2>Float</h2>
+
+      <section id="float-01">
+        <img src="http://placekitten.com/100/100" alt="Kitten Placeholder"/>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est. Lorem ipsum dolor sit amet, consetetur sadipscing
+          elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+      </section>
+
+      <ul>
+        <li>Make the image float to the left of the paragraph.</li>
+        <li>The text of the paragraph should wrap around the image.</li>
+        <li>Add margin to all but the left side to align the image with the top of the text and also to provide some visual space between the two elements.</li>
+      </ul>
+
+      <figure>
+        <img src="images/float-01.png" alt="Result of float-01"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="float-02">
+        <img src="http://placekitten.com/100/100" alt="Kitten Placeholder"/>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est. Lorem ipsum dolor sit amet, consetetur sadipscing
+          elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+          Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+      </section>
+
+      <ul>
+        <li>Do the same thing as before, but float the image to the right.</li>
+        <li>Make sure you switch the margin, too.</li>
+        <li>Now justify your text to show a cleaner space between the text and the image.</li>
+      </ul>
+
+      <figure>
+        <img src="images/float-02.png" alt="Result of float-02"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="float-03">
+        <img src="http://placekitten.com/100/100" alt="Kitten Placeholder"/>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore.
+        </p>
+        <p class="clear">
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est.
+        </p>
+      </section>
+
+      <ul>
+        <li>Float the image to the left and add margin to all four sides this time.</li>
+        <li>But this time, I want you to clear the float so that the second paragraph starts below the image and doesn't wrap around it.</li>
+      </ul>
+
+      <figure>
+        <img src="images/float-03.png" alt="Result of float-03"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+      <section id="float-04">
+        <div>
+          <img src="http://placekitten.com/100/100" alt="Kitten Placeholder"/>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            tempor invidunt ut labore et dolore.
+          </p>        
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+          vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+          no sea takimata sanctus est.
+        </p>
+      </section>
+
+      <ul>
+        <li>Float the image to the left and add margin to all four sides again.</li>
+        <li>Add a light blue background to the div to separate the image and paragraph within from the rest of the content.</li>
+        <li>Now we have two problems. First, the paragraph margin overflows the div but the image margin does not. And second, the div's background doesn't contain the image since we pulled it out of normal flow.</li>
+        <li>Read up on some examples of the clearfix hack, <a href="https://css-tricks.com/snippets/css/clear-fix/" target="_blank">here</a> or <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats#The_clearfix_hack" target="_blank">here</a>, and use one of them to fix both problems at once.</li>
+      </ul>
+
+      <figure>
+        <img src="images/float-04.png" alt="Result of float-04"/>
+        <figcaption>Result</figcaption>
+      </figure>
+
+  </body>
+</html>

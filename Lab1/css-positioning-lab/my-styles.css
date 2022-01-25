@@ -1,0 +1,9 @@
+/* Your Stylesheet */
+
+/* All your edits should go here */
+
+#display-01 div {
+  border: 1px solid blue;
+  display: inline;
+  margin: 20px;
+}
